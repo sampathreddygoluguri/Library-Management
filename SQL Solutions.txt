@@ -1,0 +1,29 @@
+Q-1:
+select FIRST_NAME as WORKER_NAME from Worker;
+
+Q-2:
+select upper(FIRST_NAME) as FIRST_NAME from Worker;
+
+Q-3:
+select distinct DEPARTMENT from Worker;
+
+Q-4:
+select left(FIRST_NAME, 3) as FIRST_NAME from Worker;
+
+Q-5:
+select INSTR(FIRST_NAME, 'a') from Worker where FIRST_NAME = 'Amitabh';
+
+Q-6:
+select RTRIM(FIRST_NAME) from Worker;
+
+Q-7:
+select LTRIM(DEPARTMENT) from Worker;
+
+Q-8:
+select distinct DEPARTMENT, length(DEPARTMENT) as DEPARTMENT_LENGTH from Worker;
+
+Q-9:
+select replace(FIRST_NAME, 'a', 'A') as FIRST_NAME_REPLACED from Worker;
+
+Q-10:
+select concat(FIRST_NAME, ' ', LAST_NAME) as COMPLETE_NAME from Worker;

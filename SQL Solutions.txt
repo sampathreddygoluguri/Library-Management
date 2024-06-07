@@ -27,3 +27,33 @@ select replace(FIRST_NAME, 'a', 'A') as FIRST_NAME_REPLACED from Worker;
 
 Q-10:
 select concat(FIRST_NAME, ' ', LAST_NAME) as COMPLETE_NAME from Worker;
+
+Q-11:
+select * from Worker order by FIRST_NAME asc;
+
+Q-12:
+select * from Worker order by FIRST_NAME asc, DEPARTMENT desc;
+
+Q-13:
+select * from Worker where FIRST_NAME in('Vipul', 'Satish');
+
+Q-14:
+select * from Worker where FIRST_NAME not in('Vipul', 'Satish');
+
+Q-15:
+select * from Worker where DEPARTMENT = 'Admin';
+
+Q-16:
+select * from Worker where FIRST_NAME like '%a%';
+
+Q-17:
+select * from Worker where FIRST_NAME like '%a';
+
+Q-18:
+select * from Worker where FIRST_NAME like '%h' and length(FIRST_NAME) = 6;
+
+Q-19:
+select * from Worker where SALARY between 100000 and 500000;
+
+Q-20:
+select * from Worker where JOINING_DATE between '2014-02-01' and '2014-02-28';
